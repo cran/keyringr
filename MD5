@@ -1,0 +1,8 @@
+bbc1d7208f39e0525b5e5ecb90a94e16 *DESCRIPTION
+d107c06fe78b15bea0ce4ba065de6ff5 *LICENSE
+17a5b0b498eb8921024f8bafd4a01e7e *NAMESPACE
+b060ac7d64aa2add0641fbfc041f24c5 *R/decrypt_dpapi_pw.R
+bdb116be74943c213454e680b8263ac1 *R/decrypt_gk_pw.R
+cb8d3ff141783fbffc5f5b55fc22b06c *README.md
+9c98b659e0addc343cba21d102620d35 *man/decrypt_dpapi_pw.Rd
+d4537c4e50f5b26a67d33b8ff09272cd *man/decrypt_gk_pw.Rd
