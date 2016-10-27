@@ -2,9 +2,9 @@ Package: keyringr
 Type: Package
 Title: Decrypt Passwords from Gnome Keyring and Windows Data Protection
         API
-Version: 0.1.0
+Version: 0.2.0
 Author: Josh Gilfillan
-Maintainer: Josh Gilfillan <oflig.public+keyringr@gmail.com>
+Maintainer: Josh Gilfillan <joshua.i.gilfillan+keyringr@gmail.com>
 Description: Currently this package decrypts passwords stored in the Gnome
     Keyring using secret tool, and strings encrypted with the Windows Data
     Protection API.  OSX Keychain coming soon.
@@ -12,6 +12,6 @@ License: MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-10-23 09:37:36 UTC; josh
+Packaged: 2016-10-26 20:56:06 UTC; josh
 Repository: CRAN
-Date/Publication: 2016-10-23 13:18:52
+Date/Publication: 2016-10-27 09:21:32

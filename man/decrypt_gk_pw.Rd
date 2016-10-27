@@ -17,10 +17,18 @@ variable or used inline.
 \description{
 Get a password from Gnome Keyring using secret-tool
 }
+\details{
+Requires the Gnome Keyring and secret-tool to be installed.
+}
 \examples{
 \dontrun{
-# returns the password for the key-value pair key: MYSCHEMA_MYDB
-decrypt_gk_pw("key MYSCHEMA_MYDB")
+# First encrypt a password using secret-tool as follows:
+# secret-tool store --label=mylabel db mydb user user1
+# now return the password above to the R environment
+x <- decrypt_gk_pw("db mydb user user1")
+
+# function is best used in a connection string command:
+ch <- odbcConnect("some dsn", uid = "user1", pwd = decrypt_gk_pw("db mydb user user1"))
 }
 }
 
