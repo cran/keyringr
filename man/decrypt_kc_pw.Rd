@@ -2,14 +2,14 @@
 % Please edit documentation in R/decrypt_kc_pw.R
 \name{decrypt_kc_pw}
 \alias{decrypt_kc_pw}
-\title{Get a generic password from OSX Keychain using the 'security' cli}
+\title{Get a generic password from macOS Keychain using the 'security' cli}
 \usage{
 decrypt_kc_pw(label, type = "generic")
 }
 \arguments{
 \item{label}{Keychain password label}
 
-\item{type}{Password type.  Either "generic" or "internet".}
+\item{type}{Leychain password type.  Either "generic" or "internet".}
 }
 \value{
 Returns a decrypted password as an invisible string.  Invisible means that
@@ -17,12 +17,12 @@ the password won't be displayed in the console, but can be assigned to a
 variable or used inline.
 }
 \description{
-Get a generic password from OSX Keychain using the 'security' cli
+Get a generic password from macOS Keychain using the 'security' cli
 }
 \details{
 Passwords must be saved in Keychain prior to using the function.
 
-OSX may require the user to grant access to "security" the first time the function
+macOS may require the user to grant access to "security" the first time the function
 is run for each password.  It is important to select "Always allow", which will
 prevent similar dialogs in the future.
 }
@@ -36,4 +36,3 @@ x <- decrypt_kc_pw("label")
 ch <- odbcConnect("some dsn", uid = "user1", pwd = decrypt_kc_pw("mydb_myuser"))
 }
 }
-
